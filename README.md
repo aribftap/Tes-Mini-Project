@@ -11,6 +11,7 @@
 ## Jawaban
 ## Soal 1
 - Normalisasi database adalah proses pengelompokan atribut data yang membentuk entitas sederhana, nonredundant, fleksibel, dan mudah beradaptasi. Sehingga dapat dipastikan bahwa database yang dibuat berkualitas baik.
+```
 - Tabel sebelum di normalisasi
 | Id | Judul              | Tahun | Jenis       | Penerbit     | Alamat Penerbit |
 |----|--------------------|-------|-------------|--------------|-----------------|
@@ -18,7 +19,8 @@
 | 2  | Belajar Vue.js     | 2020  | Pemrograman | WebDev Press | 456 Web Street  |
 | 3  | Dasar-Dasar IoT    | 2019  | Teknologi   | FutureTech   | 789 Future Ave  |
 | 4  | Pemrograman Python | 2018  | Pemrograman | Code Mastery | 321 Code Blvd   |
-
+```
+```
 - Tabel sesudah di normalisasi dipecah menjadi 3 bagian
 - Tabel Buku
 | Id | Judul              | Tahun | idJenis | idPenerbit |
@@ -27,11 +29,15 @@
 | 2  | Belajar Vue.js     | 2020  | 2       | 2          |
 | 3  | Dasar-Dasar IoT    | 2019  | 1       | 3          |
 | 4  | Pemrograman Python | 2018  | 2       | 4          |
+```
+```
 - Tabel Jenis Buku
 | idJenis | jenis       |
 |---------|-------------|
 | 1       | Teknologi   |
 | 2       | Pemrograman |
+```
+```
 - Tabel Penerbit
 | idPenerbit | penerbit     | alamatPenerbit |
 |------------|--------------|----------------|
@@ -39,16 +45,14 @@
 | 2          | WebDev Press | 456 Web Street |
 | 3          | FutureTech   | 789 Future Ave |
 | 4          | Code Mastery | 321 Code Blvd  |
+```
 
 
 ## Soal 2 dan 3
 
 Pertama buka terminal gitbash (**disarankan agar bisa jalankan script shell**) dan lakukan command dibawah:
 ```bash
-git clone
-```
-```bash
-cd 
+git clone https://github.com/aribftap/Tes-Mini-Project.git
 ```
 *Note lakukan perintah code . jika menggunakan IDE Visual Studio Code
 ```
