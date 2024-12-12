@@ -54,6 +54,9 @@ Pertama buka terminal gitbash (**disarankan agar bisa jalankan script shell**) d
 ```bash
 git clone https://github.com/aribftap/Tes-Mini-Project.git
 ```
+```bash
+cd Tes-Mini-Project
+```
 *Note lakukan perintah code . jika menggunakan IDE Visual Studio Code
 ```
 code .

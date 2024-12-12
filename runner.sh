@@ -5,18 +5,23 @@ cd backend
 echo "Installing backend dependencies..."
 npm install
 
-# Start the backend server
-echo "Starting backend server..."
-npm run start &
-backend_pid=$!
-
 # Navigate to the frontend directory and install dependencies
 cd ../frontend
 echo "Installing frontend dependencies..."
 npm install
 
+# Navigate back to the root directory
+cd ..
+
+# Start the backend server
+echo "Starting backend server..."
+cd backend
+npm run start &
+backend_pid=$!
+
 # Start the frontend server
 echo "Starting frontend server..."
+cd ../frontend
 npm run dev &
 frontend_pid=$!
 
